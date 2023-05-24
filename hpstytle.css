@@ -1,0 +1,114 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Playfair Display', serif; 
+}
+body{
+    height: 700px;
+    background-color: rgb(0, 0, 0);
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0), rgba(0,0,0,0)), url(../code2.jpg);
+    min-height:100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 50px;
+    min-height: 400px;
+    margin-right: 0%;
+    font-size: 16px;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+ul li a:hover{
+    background-color:#fff;
+    color:#000;
+}
+ul li.active a{
+    background-color:#fff;
+    color:#000;
+}
+.logo img{
+    float: left;
+    width: 120px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 375px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.title h1{
+    color: #fff;
+    font-size: 70px;
+}
+.title p{
+    color: #fff;
+    font-size: 20px;
+    margin: 10px 0 40px;
+}
+.sub-menu{
+    display: none;
+    top: 55px;
+    position: relative;
+}
+.sub-menu ul{
+    position: absolute;
+}
+.main ul li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background-color: rgb(0, 45, 117);
+    margin-top: 10px;
+    margin-left: -20px;
+}
+.main ul li:hover .sub-menu ul{
+    display: block;
+    margin: 12px;
+}
+.main ul li:hover .sub-menu ul li{
+    width: 250px;
+    padding: 8px;
+    border-bottom: 1px #fff;
+    background-color: transparent;
+    transition: 0.4 ease;
+    text-align: left;
+    border-radius: 0px;
+}
+.socials img{
+    width: 75px;
+    height: auto;
+    transform: translate(-0%, -50%);
+}
+
+@media(max-width:700px){
+    .title h1{
+        color: #fff;
+        font-size: 30px;
+    }
+   
+}
+a{
+    text-decoration: none;
+    background-color: none;
+    color: #fff;
+}
